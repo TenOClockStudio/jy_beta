@@ -5,3 +5,7 @@ define(function (require) {
         http = require('common/http');
 	console.log("p-c");
 });
+$(function(){
+	$('#myStat1').circliful();
+	$('#myStat2').circliful();
+});

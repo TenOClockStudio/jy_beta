@@ -1,0 +1,47 @@
+.banner{
+	padding: 10px;
+	margin-top: 10px;
+	background: white;
+}
+.banner-img{
+	float: left;
+	width: 70px;
+	height: 70px;
+	border-radius: 4px;
+	background: url(/img/all.png) -903px -82px no-repeat;
+}
+.banner-center{
+	margin-left: 10px;
+	float: left;
+}
+.banner-fr{
+	color: #1FB5AC;
+	line-height: 70px;
+	float: right;	
+}
+
+.center div{
+	float: left;
+}
+.center-cen{
+	margin: 0 2px;
+	line-height: 80px;
+	color: #1FB5AC;
+}
+.circliful { 
+    position: relative;  
+} 
+.circle-text, .circle-info, .circle-text-half, .circle-info-half { 
+    width: 100%; 
+    position: absolute; 
+    text-align: center; 
+    display: inline-block; 
+} 
+.circle-info, .circle-info-half { 
+    color: #999; 
+} 
+.circliful .fa { 
+    margin: -10px 3px 0 3px; 
+    position: relative; 
+    bottom: 4px; 
+} 
