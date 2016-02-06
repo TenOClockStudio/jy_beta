@@ -218,6 +218,53 @@ body{
   background-color: #EBEBEB;
   font-size：12px;
 }
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+/*头部彩条css*/
+.top-head{
+  line-height: 40px;
+  background:#1FB5AC;
+  text-align: center;
+}
+.top-head span{
+  display: block;
+}
+.font-c{
+  float: left;
+  font-size: 24px;
+  width: 80%;
+  text-align: center;
+  height: 40px;
+  color: white;
+}
+.top-fl{
+  float: left;
+  width: 10%
+}
+.top-fr{
+  float: right;
+  width: 10%;
+  text-align: -webkit-right;
+}
+.top-back{
+  margin: 3px 0 0 5px;
+  width: 35px;
+  height: 35px;
+  background: url(/img/all.png) -30px -60px no-repeat;
+}
+.top-menu{
+  margin: 3px 5px 0 0;
+  width: 35px;
+  height: 35px;
+  background: url(/img/all.png) -80px -60px no-repeat;
+}
 
 
 /*end public css style*/
