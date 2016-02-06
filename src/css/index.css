@@ -1,0 +1,46 @@
+.banner-img{
+	width: 100%;
+}
+.spacing{
+	padding: 10px 15px;
+	background: #95B85E;
+}
+.in-sp{
+	color: white;
+	font-size: 14px;
+}
+.in-ta{
+	width: 100%;
+	border-collapse:collapse;
+}
+.in-ta td{
+	min-width: 50px;
+	padding: 10px 2px;
+}
+.in-ta tbody{
+	background: white;
+}
+.in-tb{
+	background: white;
+	margin: 10px 0;
+}
+.in-tb div{
+	width: 60px;
+	height: 60px;
+}
+.text-r{
+	text-align: right;
+	width: 90px;
+}
+.boeder-t{
+	font-size: 12px;
+	border-top: 1px solid #ccc;
+}
+.in-bt{
+	border-top: 2px solid #ccc;
+	background: white;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 12px;
+}

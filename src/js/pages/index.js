@@ -1,4 +1,4 @@
-define(function (require) {
+/*define(function (require) {
     'use strict';
     require('jquery');
 	require('weui_js');
@@ -10,3 +10,4 @@ define(function (require) {
 		$.alert("自定义的消息内容");
 	},2000);
 });
+*/
