@@ -1,6 +1,6 @@
 .banner{
 	padding: 10px;
-	margin-top: 10px;
+	margin-top: 1.17647059em;
 	background: white;
 }
 .banner-img{
@@ -11,8 +11,8 @@
 	background: url(/img/all.png) -903px -82px no-repeat;
 }
 .banner-center{
-	margin-left: 10px;
 	float: left;
+	margin: 5px 10px;
 }
 .banner-fr{
 	color: #1FB5AC;
@@ -20,12 +20,13 @@
 	float: right;	
 }
 
-.center div{
+.center-fl{
 	float: left;
+	font-size: 12px;
 }
 .center-cen{
 	margin: 0 2px;
-	line-height: 80px;
+	line-height: 50px;
 	color: #1FB5AC;
 }
 .circliful { 
@@ -45,3 +46,18 @@
     position: relative; 
     bottom: 4px; 
 } 
+.weui_progress_bar {
+    background-color: #EBEBEB;
+    height: 15px;
+
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.weui_cells p{
+	font-size: 12px;
+}
+.weui_progress_inner_bar {
+    height: 100%;
+    background-color: #95B85E;

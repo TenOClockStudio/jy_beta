@@ -12,20 +12,32 @@
 		<div class="container js_container">
 			<div class="page">
 				<div class="top-head clearfix">
-					<a class="top-fl"><span class="top-back"></span></a>
+					<a href="/index.html"class="top-fl"><span class="top-back"></span></a>
 					<span class="font-c">个人中心</span>
 					<a class="top-fr"><span class="top-menu"></span></a>
 				</div>
 				<div class="banner clearfix">
 					<div class="banner-img"></div>
-					<div class="banner-center"><h4>王思聪</h2><p>ID:1356661234</p><p>微信:wangsicong</p></div>
+					<div class="banner-center"><h3>王思聪</h3><p>ID:1356661234</p><p>微信:wangsicong</p></div>
 					<div class="banner-fr">绑定账号</div>
 				</div>
-				<div class="center clearfix banner">
-					<div id="myStat1" data-dimension="80" data-text="75%"  data-width="3" data-fontsize="12" data-percent="75" data-fgcolor="#1FB5AC" data-bgcolor="#eee"></div>
-					<div class="center-cen">我的学时</div>
-					<div id="myStat2" data-dimension="80" data-text="50%"  data-width="3" data-fontsize="12" data-percent="50" data-fgcolor="#1FB5AC" data-bgcolor="#eee"></div>
-					<div class="center-cen">我的学勤</div>
+				<div>
+					<div class="center banner">
+						<div class="clearfix">
+							<div class="center-fl">我的状态</div>
+							<div class="weui_progress center-fl" style=" margin:2px 0 0 10px; width: 200px">
+						  		<div class="weui_progress_bar" style="border-radius: 20px;">
+						    		<div class="weui_progress_inner_bar js_progress" style="border-radius: 20px; width: 100%;text-align: center;line-height: 15px;font-size: 12px;color: white;">学习中</div>
+						  		</div>
+						  	</div>
+					  	</div>
+					  	<div class="clearfix" style="margin:10px 0px 0px 55px;">
+							<div class="center-fl" id="myStat1" data-dimension="50" data-text="75%"  data-width="1" data-fontsize="12" data-percent="75" data-fgcolor="#1FB5AC" data-bgcolor="#ccc"></div>
+							<div class="center-cen center-fl">我的学时</div>
+							<div id="myStat2" class="center-fl" data-dimension="50" data-text="50%"  data-width="1" data-fontsize="12" data-percent="50" data-fgcolor="#1FB5AC" data-bgcolor="#ccc"></div>
+							<div class="center-cen center-fl">我的学勤</div>
+						</div>
+					</div>
 				</div>
 				<div class="weui_cells weui_cells_access">
 				  	<a class="weui_cell" href="javascript:;">
@@ -56,8 +68,6 @@
 			</div>
     	</div>
 		<script src="/js/lib/require.js"></script>
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="/js/lib/jquery.circliful.min.js"></script>
 		<script>
 			requirejs(['/js/boot.js'], function (boot) {
 				require(['common/base'], function() {

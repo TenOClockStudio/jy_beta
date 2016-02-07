@@ -215,8 +215,8 @@
 
 /*public css style*/
 body{
+  font-size: 12px;
   background-color: #EBEBEB;
-  font-size：12px;
 }
 .clearfix:before,
 .clearfix:after {
@@ -238,7 +238,7 @@ body{
 }
 .font-c{
   float: left;
-  font-size: 24px;
+  font-size: 18px;
   width: 80%;
   text-align: center;
   height: 40px;

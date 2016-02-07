@@ -5,13 +5,15 @@ requirejs.config({
     paths:{
         "jquery": "js/lib/jquery-2.1.4",
         "weui_js":"js/lib/jquery-weui",
-        "common": "js/common"
+        "common": "js/common",
+        "circliful": "js/lib/jquery.circliful.min"
         //"plugins": "common/plugins",
         //"templates": "templates",
         //"page" : "page"
     },
     shim: {
         'jquery':{'exports':'$'},
-        "weui_js":{deps: ['jquery']}
+        "weui_js":{deps: ['jquery']},
+        "circliful":{deps: ['jquery']}
     }
 });
