@@ -1,0 +1,20 @@
+.psw-cen{
+	padding: 10px;
+	margin-top: 1.17647059em;
+	background: white;
+	font-size:16px;
+	line-height: 50px;
+	text-align: center;
+}
+.psw-cen input{
+	padding: 5px;
+	height: 20px;
+	border-radius: none;
+}
+.psw-submit{
+	width: 150px;
+    height: 60px;
+    margin: 0 auto;
+	display: block;
+	background: url(/img/all.png) -20px -115px no-repeat;
+}
