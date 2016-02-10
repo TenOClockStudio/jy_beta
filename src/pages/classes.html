@@ -3,32 +3,92 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-        <title></title>
+        <title>课程学习-正向红亚学习平台</title>
         <link rel="stylesheet" href="/css/weui.min.css"/>
 		<link rel="stylesheet" href="/css/jquery-weui.css">
+		<link rel="stylesheet" href="/js/lib/mobiscroll_datetime/mobiscroll.custom-2.5.2.min.css">
 		<link rel="stylesheet" href="/css/classes.css">
     </head>
     <body>
 		<div class="container js_container">
 			<div class="page">
-				<div class="hd">
-					<h1 class="page_title">Button-5515</h1>
-				</div>
-				<div class="bd spacing">
-					<a href="javascript:;" class="weui_btn weui_btn_primary">按钮</a>
-					<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_primary">按钮</a>
-					<a href="javascript:;" class="weui_btn weui_btn_warn">确认</a>
-					<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_warn">确认</a>
-					<a href="javascript:;" class="weui_btn weui_btn_default">按钮</a>
-					<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_default">按钮</a>
-					<div class="button_sp_area">
-						<a href="javascript:;" class="weui_btn weui_btn_plain_default">按钮</a>
-						<a href="javascript:;" class="weui_btn weui_btn_plain_primary">按钮</a>
-			
-						<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary">按钮</a>
-						<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">按钮</a>
+				<section class="search-wrap clearfix">
+					<a href="javascript:history.back()" class="icon-back"></a>
+					<div class="search-box clearfix">
+						<i class="icon-search"></i>
+						<input type="text" placeholder="输入关键字进行搜索" class="input-search"/>
+						<button type="button" class="btn-search">搜索</button>
 					</div>
-				</div>
+					<em href="#" class="icon-menu" id="icon-menu">
+						<i class="trig hide"></i>
+						<ul class="menu-list hide">
+							<li><a href="/">主页</a></li>
+							<li><a href="/pages/classes.html">课程学习</a></li>
+							<li><a href="/pages/examination.html">在线考试</a></li>
+							<li><a href="/pages/notebook.html">Notebook</a></li>
+							<li><a href="/pages/personal_center.html">个人中心</a></li>
+						</ul>
+					</em>
+				</section>
+				<section class="filter-box clearfix">
+					<div class="filter-box-date"><label>日期：</label><input type="text" name="appDate" id="appDate" class="date-style" placeholder="日/月/年" readonly/></div>
+					<div class="filter-box-pro"><label>专业：</label>
+						<select name="" id="" class="select-style">
+							<option value="">学前教育专班</option>
+							<option value="">003</option>
+							<option value="">005</option>
+						</select>
+					</div>
+				</section>
+				<section class="class-wrap">
+					<div class="nav-filter">
+						<label>状态：</label>
+						<a href="#" class="nav-sts">全部</a>
+						<a href="#" class="nav-sts">已学习</a>
+						<a href="#" class="nav-sts">未学习</a>
+						<a href="#" class="nav-sts">学习完成</a>
+					</div>
+					<div class="card-wrap">
+						<ul class="card">
+							<li>
+								<h5 class="card-title">《学前儿童美术教育活动理论与实践》</h5>
+							</li>
+							<li>
+								<p>学习时间：2015-12-30 14:48&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时长：30分钟</p>
+								<p>课程名称：网络学习《学前儿童美术教学活动设计》</p>
+							</li>
+							<li>
+								<div class="visited">已观看：
+									<div class="weui_progress center-fl" style=" margin:2px 0 0 0px;width: 10rem;display: inline-block;">
+										<div class="weui_progress_bar" style="">
+											<div class="weui_progress_inner_bar js_progress" style="width: 80%;">学习中</div>
+										</div>
+									</div>
+								</div>
+								<a href="javascript:;" class="weui_btn btn_custom_primary">继续学习</a>
+							</li>
+						</ul>
+						<ul class="card">
+							<li>
+								<h5 class="card-title">《学前儿童美术教育活动理论与实践》</h5>
+							</li>
+							<li>
+								<p>学习时间：2015-12-30 14:48&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时长：30分钟</p>
+								<p>课程名称：网络学习《学前儿童美术教学活动设计》</p>
+							</li>
+							<li>
+								<div class="visited">已观看：
+									<div class="weui_progress center-fl" style=" margin:2px 0 0 0px;width: 10rem;display: inline-block;">
+										<div class="weui_progress_bar" style="">
+											<div class="weui_progress_inner_bar js_progress" style="width: 80%;">学习中</div>
+										</div>
+									</div>
+								</div>
+								<a href="javascript:;" class="weui_btn btn_custom_primary">继续学习</a>
+							</li>
+						</ul>
+					</div>
+				</section>
 			</div>
     	</div>
 		<script src="/js/lib/require.js"></script>
