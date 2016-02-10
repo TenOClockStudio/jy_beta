@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>我的笔记-正向红亚学习平台</title>
+    <link rel="stylesheet" href="/css/weui.min.css"/>
+    <link rel="stylesheet" href="/css/jquery-weui.css">
+    <link rel="stylesheet" href="/js/lib/mobiscroll_datetime/mobiscroll.custom-2.5.2.min.css">
+    <link rel="stylesheet" href="/css/my_record.css">
+</head>
+<body>
+<div class="container js_container">
+    <div class="page">
+        <section class="search-wrap clearfix">
+            <a href="javascript:history.back()" class="icon-back"></a>
+            <div class="search-box clearfix">
+                <i class="icon-search"></i>
+                <input type="text" placeholder="输入关键字进行搜索" class="input-search"/>
+                <button type="button" class="btn-search">搜索</button>
+            </div>
+            <em href="#" class="icon-menu" id="icon-menu">
+                <i class="trig hide"></i>
+                <ul class="menu-list hide">
+                    <li><a href="/">主页</a></li>
+                    <li><a href="/pages/classes.html">课程学习</a></li>
+                    <li><a href="/pages/examination.html">在线考试</a></li>
+                    <li><a href="/pages/notebook.html">Notebook</a></li>
+                    <li><a href="/pages/personal_center.html">个人中心</a></li>
+                </ul>
+            </em>
+        </section>
+        <section class="filter-box clearfix">
+            <div class="filter-box-date"><label>日期：</label><input type="text" name="appDate" id="appDate" class="date-style" placeholder="日/月/年" readonly/></div>
+            <div class="filter-box-pro"><label>专业：</label>
+                <select name="" id="" class="select-style">
+                    <option value="">学前教育专班</option>
+                    <option value="">003</option>
+                    <option value="">005</option>
+                </select>
+            </div>
+        </section>
+        <section class="record-wrap">
+            <div class="record-area">
+                <div class="record-box clearfix">
+                    <input type="text" placeholder="输入文字，记录笔记" class="input-record"/>
+                    <button type="button" class="btn-submit">提交</button>
+                </div>
+            </div>
+            <h3 class="record-title">历史笔记：</h3>
+            <ul class="record-list">
+                <li>
+                    <div class="record-list-detail">
+                        <p class="clearfix">
+                            <span class="record-list-detail-l">2015-12-30 14:55</span>
+                            <span class="record-list-detail-r">
+                                <a href="#">详情</a>&nbsp;|&nbsp;
+                                <a href="#">编辑</a>
+                            </span>
+                        </p>
+                        <p>查看错题查看错题查看错题查看错题查看错题查看错题查看错题查看错题查看错题查看错题</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="record-list-detail">
+
+                        <p class="clearfix">
+                            <span class="record-list-detail-l">2015-12-30 14:55</span>
+                            <span class="record-list-detail-r">
+                                <a href="#">详情</a>&nbsp;|&nbsp;
+                                <a href="#">编辑</a>
+                            </span>
+                        </p>
+                        <p>查看错题查看错题查看错题查看错题查看错题查看错题查看错题查看错题查看错题查看错题</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="record-list-detail">
+
+                        <p class="clearfix">
+                            <span class="record-list-detail-l">2015-12-30 14:55</span>
+                            <span class="record-list-detail-r">
+                                <a href="#">详情</a>&nbsp;|&nbsp;
+                                <a href="#">编辑</a>
+                            </span>
+                        </p>
+                        <p>查看错题查看错题查看错题查看错题查看错题查看错题查看错题查看错题查看错题查看错题</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+<script src="/js/lib/require.js"></script>
+<script>
+    requirejs(['/js/boot.js'], function (boot) {
+        require(['common/base'], function() {
+            requirejs(['js/pages/my_record']);
+        });
+    });
+</script>
+</body>
+</html>
