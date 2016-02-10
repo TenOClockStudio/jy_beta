@@ -227,7 +227,7 @@ body{
 .clearfix:after {
   clear: both;
 }
-/*头部彩条css*/
+/*澶撮儴褰╂潯css*/
 .top-head{
   line-height: 40px;
   background:#1FB5AC;
@@ -265,6 +265,8 @@ body{
   height: 35px;
   background: url(/img/all.png) -80px -60px no-repeat;
 }
-
+.hide{
+  display: none!important;
+}
 
 /*end public css style*/
