@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>考试答题-正向红亚学习平台</title>
+    <link rel="stylesheet" href="/css/weui.min.css"/>
+    <link rel="stylesheet" href="/css/jquery-weui.css">
+    <link rel="stylesheet" href="/js/lib/mobiscroll_datetime/mobiscroll.custom-2.5.2.min.css">
+    <link rel="stylesheet" href="/css/paper.css">
+</head>
+<body>
+<div class="container js_container">
+    <div class="page">
+        <section class="search-wrap clearfix">
+            <a href="javascript:history.back()" class="icon-back"></a>
+            <div class="search-box clearfix">
+                <i class="icon-search"></i>
+                <input type="text" placeholder="输入关键字进行搜索" class="input-search"/>
+                <button type="button" class="btn-search">搜索</button>
+            </div>
+            <em href="#" class="icon-menu" id="icon-menu">
+                <i class="trig hide"></i>
+                <ul class="menu-list hide">
+                    <li><a href="/">主页</a></li>
+                    <li><a href="/pages/classes.html">课程学习</a></li>
+                    <li><a href="/pages/examination.html">在线考试</a></li>
+                    <li><a href="/pages/notebook.html">Notebook</a></li>
+                    <li><a href="/pages/personal_center.html">个人中心</a></li>
+                </ul>
+            </em>
+        </section>
+        <section class="filter-box clearfix">
+            <!--<div class="filter-box-date"><label>日期：</label><input type="text" name="appDate" id="appDate" class="date-style" placeholder="日/月/年" readonly/></div>-->
+            <div class="filter-box-sts"><label>状态：</label>
+                <select name=""  class="select-style">
+                    <option value="">已考试</option>
+                    <option value="">003</option>
+                    <option value="">005</option>
+                </select>
+            </div>
+            <div class="filter-box-pro"><label>专业：</label>
+                <select name="" class="select-style">
+                    <option value="">学前教育专班</option>
+                    <option value="">003</option>
+                    <option value="">005</option>
+                </select>
+            </div>
+        </section>
+        <section class="exam-wrap">
+            <div class="exam-cards clearfix">
+                <section class="cards-l">
+                    <p>2015江苏测试测试发测试</p>
+                    <p>所属专业：学前教育专业班</p>
+                    <p>上次得分：50分</p>
+                </section>
+                <section class="cards-r">
+                    <button type="button" class="weui_btn weui_btn_custom_primary">马上考试</button>
+                </section>
+            </div>
+            <div class="exam-cards clearfix">
+                <section class="cards-l">
+                    <p>2015江苏测试测试发测试</p>
+                    <p>所属专业：学前教育专业班</p>
+                    <p>上次得分：50分</p>
+                </section>
+                <section class="cards-r">
+                    <button type="button" class="weui_btn weui_btn_custom_primary">马上考试</button>
+                </section>
+            </div>
+            <div class="exam-cards clearfix">
+                <section class="cards-l">
+                    <p>2015江苏测试测试发测试</p>
+                    <p>所属专业：学前教育专业班</p>
+                    <p>上次得分：50分</p>
+                </section>
+                <section class="cards-r">
+                    <button type="button" class="weui_btn weui_btn_custom_primary">马上考试</button>
+                </section>
+            </div>
+        </section>
+    </div>
+</div>
+<script src="/js/lib/require.js"></script>
+<script>
+    requirejs(['/js/boot.js'], function (boot) {
+        require(['common/base'], function() {
+            requirejs(['js/pages/paper']);
+        });
+    });
+</script>
+</body>
+</html>
