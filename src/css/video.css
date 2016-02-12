@@ -1,0 +1,127 @@
+.video-box{
+    margin: 15px 0;
+    background-color: #ffffff;
+    /*padding-bottom: 10px;*/
+}
+.video-box .top-head{
+    background-color: transparent;
+}
+.video-box .top-back{
+    background: url("../img/all.png") no-repeat -166px -56px;
+}
+.video-box .top-menu{
+    background: url("../img/all.png") no-repeat -217px -56px;
+}
+.video-box .font-c{
+    color: #333333;
+    font-size: 1rem;
+}
+.video-tab-wrap .video-nav{
+    background-color: #95B85E;
+}
+.video-nav .nav-ct{
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    /*border-right: 1px solid #ccc;*/
+    box-sizing: border-box;
+}
+.video-nav .nav-ct:last-child{
+    border: none;
+}
+.video-nav .nav-ct.active{
+    background-color: #3EC6BD;
+}
+.video-ct .video-card{
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.weui_btn.weui_btn_custom_primary{
+    background-color: #3EC6BD;
+    float: right;
+    width: auto;
+    font-size: 1rem;
+}
+.download-list .download-list-ins{
+    float: left;
+}
+.download-list>li{
+    padding: 1rem;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+    line-height: 2.4;
+    margin-bottom: 0.5rem;
+}
+.submit-area{
+    padding:0.5rem;
+}
+.submit-area .submit-box{
+    /*width: 75%;*/
+    height: 42px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.submit-area .input-submit{
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 70%;
+}
+.submit-area .btn-submit{
+    float: right;
+    width: 20%;
+    height: 100%;
+    background-color: #3EC6BD;
+    border: 1px solid transparent;
+    color: #ffffff;
+}
+
+
+.record-title{
+    font-size: 1rem;
+    border-bottom: 1px solid #cccccc;
+    line-height: 2.4;
+    margin:0 .5rem;
+    color: #3EC6BD;
+}
+.record-list{
+    list-style: none;
+}
+.record-list>li{
+    border: 1px solid #cccccc;
+    margin: .5rem;
+    padding: .5rem;
+}
+.record-list .record-list-detail{
+    text-decoration: none;
+    color: #333;
+}
+.record-list-detail em{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #3EC6BD;
+    margin-left: 0.5rem;
+}
+.record-list-detail-l{
+    float: left;
+}
+.record-list-detail-r{
+    float: right;
+}
+.record-list-detail a{
+    color: #3EC6BD;
+}
+.record-list-detail .ask-p,
+.record-list-detail .ans-p{
+    font-size: 0.9rem;
+}
+.record-list-detail .ans-p{
+    color: #3EC6BD;
+}
