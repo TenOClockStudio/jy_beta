@@ -61,4 +61,14 @@ define(function (require) {
     //$("#icon-menu").click(function(){
     //    $(this).children().toggleClass("hide");
     //});
+    $("#btn-submit").click(function(){
+        $.modal({
+            title: "提示",
+            text: "确认要交卷吗？",
+            buttons: [
+                { text: "否", onClick: function(){ console.log(1)} },
+                { text: "是", onClick: function(){ console.log(2)} }
+            ]
+        });
+    });
 });
