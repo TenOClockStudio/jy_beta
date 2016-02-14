@@ -25,9 +25,6 @@ define(function (require) {
 	    var optDateTime = $.extend(opt['datetime'], opt['default']);
 	    var optTime = $.extend(opt['time'], opt['default']);
     });
-	$("#icon-menu").click(function(){
-        $(this).children().toggleClass("hide");
-    });
     $('#submit').click(function(){
     	var a = $('.per1').val();
     	var b = $('.per2').val();
@@ -51,5 +48,9 @@ define(function (require) {
     	$('.per2').val("");
     	$('.per3').val("");
     	$('.per4').val("");
+    });
+    $("#top-icon-menu").click(function(){
+        $('.top-trig').toggleClass("hide");
+        $('.top-menu-list').toggleClass("hide");
     });
 });

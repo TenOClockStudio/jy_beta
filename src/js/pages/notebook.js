@@ -11,4 +11,8 @@ define(function (require) {
     $("#"+name).css('display','block');
     $("#"+name).siblings().css('display','none');
 	 });
+    $("#top-icon-menu").click(function(){
+        $('.top-trig').toggleClass("hide");
+        $('.top-menu-list').toggleClass("hide");
+    });
 });

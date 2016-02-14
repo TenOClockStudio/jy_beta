@@ -7,4 +7,9 @@ define(function (require) {
     //百分比
 	$('#myStat1').circliful();
 	$('#myStat2').circliful();
+
+	$("#top-icon-menu").click(function(){
+        $('.top-trig').toggleClass("hide");
+        $('.top-menu-list').toggleClass("hide");
+    });
 });

@@ -269,9 +269,45 @@ body{
 }
 
 .menu-white{
+      position: relative;
   vertical-align: middle;
   width: 30px;
   height: 30px;
+}
+.top-menu-list{
+    position: absolute;
+    left: -67px;
+    top: 110%;
+    width: 92px;
+    list-style: none;
+    background: #1FB5AC;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.top-menu-list a{
+    color: #ffffff;
+    text-underline: none;
+}
+.top-menu-list>li{
+    border-bottom: 1px solid #3EC6BD;
+    padding: 0.3rem;
+    line-height: 25px;
+}
+.top-trig{
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 10px;
+    top: 90%;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #3EC6BD;
+}
+.top-icon-menu{
+    float: right;
+    position: relative;
+    font-style: normal;
 }
 .top-head.top-head-second{
   background:#95B85E;

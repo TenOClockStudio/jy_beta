@@ -3,5 +3,8 @@ define(function (require) {
     require('jquery');
     var global = require('common/global'),
         http = require('common/http');
-	console.log("ico");
+	$("#top-icon-menu").click(function(){
+        $('.top-trig').toggleClass("hide");
+        $('.top-menu-list').toggleClass("hide");
+    });
 });
