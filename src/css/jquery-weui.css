@@ -218,6 +218,12 @@ body{
   font-size: 12px;
   background-color: #EBEBEB;
 }
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
 .clearfix:before,
 .clearfix:after {
   display: table;

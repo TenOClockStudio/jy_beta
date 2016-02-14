@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-        <title></title>
+        <title>帐号绑定-正向红亚学习平台</title>
         <link rel="stylesheet" href="/css/weui.min.css"/>
 		<link rel="stylesheet" href="/css/jquery-weui.css">
 		<link rel="stylesheet" href="/css/account_bind.css">
@@ -11,23 +11,44 @@
     <body>
 		<div class="container js_container">
 			<div class="page">
-				<div class="hd">
-					<h1 class="page_title">Button-button</h1>
+				<div class="top-head clearfix">
+					<a href="/pages/personal_center.html"class="top-fl"><img src="/img/back-white.png" class="back-white"></a>
+					<span class="font-c">帐号绑定</span>
+					<a class="top-fr"><img src="/img/menu-white.png" class="menu-white"></span></a>
 				</div>
-				<div class="bd spacing">
-					<a href="javascript:;" class="weui_btn weui_btn_primary">按钮</a>
-					<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_primary">按钮</a>
-					<a href="javascript:;" class="weui_btn weui_btn_warn">确认</a>
-					<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_warn">确认</a>
-					<a href="javascript:;" class="weui_btn weui_btn_default">按钮</a>
-					<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_default">按钮</a>
-					<div class="button_sp_area">
-						<a href="javascript:;" class="weui_btn weui_btn_plain_default">按钮</a>
-						<a href="javascript:;" class="weui_btn weui_btn_plain_primary">按钮</a>
-			
-						<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary">按钮</a>
-						<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">按钮</a>
+				<div class="spacing">
+					<span class="in-sp">微信绑定</span>
+				</div>
+				<div class="acc clearfix">
+					<img src="/img/weixin.png" class="acc-weixin fl">
+					<span class="fl guanlian">[关联账号]</span>
+					<span class="fl  bangding acc-clo">[解除绑定]</span>
+				</div>
+				<div class="spacing">
+					<span class="in-sp">手机绑定</span>
+				</div>
+				<div class="acc">
+					<span class="dis-bl">请填写您需要绑定的手机号，并进行验证：</span>
+					<div class="clearfix">
+					<input class="acc-input fl phone" type="text" placeholder="请输入您的手机号码">
+					<a href="javascript:;" class="weui_btn sen_btn fl msgs">获取短信验证码</a>
 					</div>
+					<div class="clearfix" style="margin-top:20px;">
+					<input class="acc-input dis-bl fl code" type="text" placeholder="请输入您收到的验证码">
+					<p class="dis-bl fl acc-p">若未收到验证码，60秒后重新点击获取验证码</p>
+					</div>
+					<div style="margin: 20px auto; text-align:center;">
+                		<img class="acc-img" src="/img/submit.png" id="submit">
+                		<img class="acc-img" src="/img/reset.png"id="reset">
+              		</div>
+				</div>
+				<div class="spacing">
+					<span class="in-sp">手机号已绑定</span>
+				</div>
+				<div class="acc clearfix">
+					<span class="dis-bl">您已绑定手机号：</span>
+					<input class="acc-input fl bd-number" type="text" placeholder="13566661234">
+					<a href="javascript:;" class="weui_btn acc_btn fl">更换</a>
 				</div>
 			</div>
     	</div>
