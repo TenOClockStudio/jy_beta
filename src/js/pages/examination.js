@@ -61,4 +61,7 @@ define(function (require) {
     $("#icon-menu").click(function(){
         $(this).children().toggleClass("hide");
     });
+    $(".weui_btn_custom_primary").click(function(){
+        window.location.href = "/pages/paper.html";
+    });
 });
