@@ -6,19 +6,55 @@
         <title>个人信息-正向红亚学习平台</title>
         <link rel="stylesheet" href="/css/weui.min.css"/>
 		<link rel="stylesheet" href="/css/jquery-weui.css">
+		<link rel="stylesheet" href="/js/lib/mobiscroll_datetime/mobiscroll.custom-2.5.2.min.css">
 		<link rel="stylesheet" href="/css/personal_info.css">
     </head>
     <body>
 		<div class="container js_container">
 			<div class="page">
 				<div class="top-head clearfix">
-					<a href="/pages/personal_center.html"class="top-fl"><span class="top-back"></span></a>
+					<a href="/pages/personal_center.html"class="top-fl"><img src="/img/back-white.png" class="back-white"></span></a>
 					<span class="font-c">个人信息</span>
-					<a class="top-fr"><span class="top-menu"></span></a>
+					<a class="top-fr"><img src="/img/menu-white.png" class="menu-white"></span></a>
 				</div>
-				<div>
-
+				<div class="per-cen">
+					<div>
+                		<label>昵称：</label>
+                		<span>
+                  			<input class="per-input per1" type="text" style="width: 200px;">
+                		</span>
+              		</div>
+              		<div>
+                		<label>生日：</label>
+                		<span>
+                  			<input type="text" name="appDate" id="appDate" class="date-style per-input per2" placeholder="日/月/年" readonly style="width: 170px;"/><img src="/img/date.png" class="date-img"style="width: 30px;">
+                		</span>
+              		</div>
+              		<div>
+                		<label>Q&nbspQ：</label>
+                		<span>
+                  			<input class="per-input per3" type="text" style="width: 200px;">
+                		</span>
+              		</div>
+              		<div>
+                		<label>性别：</label>
+                		<span class="per-gender">
+                  			<input name="gender" type="radio"  checked="checked" >&nbsp男&nbsp&nbsp
+                  			<input name="gender" type="radio">&nbsp女
+                		</span>
+              		</div>
+              		<div>
+                		<label>邮箱：</label>
+                		<span>
+                  			<input class="per-input per4" type="email" style="width: 200px;">
+                		</span>
+              		</div>
+              		<div style="margin-top: 20px;">
+                		<img class="per-img" src="/img/submit.png" id="submit">
+                		<img class="per-img" src="/img/reset.png"id="reset">
+              		</div>
 				</div>
+			</div>
 			</div>
     	</div>
 		<script src="/js/lib/require.js"></script>

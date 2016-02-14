@@ -253,17 +253,17 @@ body{
   width: 10%;
   text-align: -webkit-right;
 }
-.top-back{
-  margin: 3px 0 0 5px;
-  width: 35px;
-  height: 35px;
-  background: url(../img/all.png) -30px -60px no-repeat;
+.back-white{
+  vertical-align: middle;
+  margin-top: -4px;
+  width: 20px;
+  height: 20px;
 }
-.top-menu{
-  margin: 3px 5px 0 0;
-  width: 35px;
-  height: 35px;
-  background: url(../img/all.png) -80px -60px no-repeat;
+
+.menu-white{
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
 }
 .top-head.top-head-second{
   background:#95B85E;

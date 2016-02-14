@@ -1,0 +1,20 @@
+.ico-cen{
+	padding: 20px;
+	margin-top: 1.17647059em;
+	background: white;
+	font-size:16px;
+	line-height: 50px;
+	text-align: center;
+}
+.ico-img{
+	width: 150px;
+	height: 150px;
+}
+.weui_btn_ico{
+	background-color: #1FB5AC;
+	width: 250px;
+}
+
+.ico-div{
+	margin: -20px 0 20px 0;
+}
