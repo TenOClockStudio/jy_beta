@@ -60,12 +60,13 @@ define(function (require) {
     });
 
     $('.acc_btn').click(function(){
-    	$.confirm("你确定更换为该手机号码吗？", function() {
-			$.alert("更换成功");
-			var c=$('.bd-number').val();
-			$('.bd-number').attr('placeholder',c);
-			}, function() {
-
-			});
+    	var c=$('.bd-number').val();
+    	if (c=="") {
+    		$.alert("请输入新的手机号码");
+    	}else{
+    		$.confirm("你确定更换为该手机号码吗？", function() {
+				$('.bd-number').attr('placeholder',c);
+			}, function() {});
+    	}
     });
 });
