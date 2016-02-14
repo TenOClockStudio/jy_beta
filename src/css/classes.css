@@ -13,6 +13,7 @@
     background: url("../img/all.png") no-repeat -166px -56px;
 }
 .search-wrap .icon-menu{
+    float: right;
     width: 40px;
     height: 40px;
     position: relative;
@@ -20,7 +21,7 @@
     background: url("../img/all.png") no-repeat -217px -56px;
 }
 .search-wrap .search-box{
-    width: 75%;
+    width: 70%;
     height: 42px;
     border: 1px solid #cccccc;
     background-color: #ffffff;
