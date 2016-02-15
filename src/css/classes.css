@@ -154,6 +154,7 @@
 }
 .visited{
     display: inline-block;
+    width: 65%;
 }
 
 .weui_progress_inner_bar {
