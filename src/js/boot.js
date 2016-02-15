@@ -3,7 +3,7 @@ requirejs.config({
     urlArgs: "v=0.0.1",
     baseUrl:"/",
     paths:{
-        "jquery": "js/lib/jquery-2.1.4",
+        "jquery": "js/lib/jquery-2.1.4.min",
         "weui_js":"js/lib/jquery-weui",
         "common": "js/common",
         "circliful": "js/lib/jquery.circliful.min",
