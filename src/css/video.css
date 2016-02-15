@@ -7,10 +7,18 @@
     background-color: transparent;
 }
 .video-box .top-back{
-    background: url("../img/all.png") no-repeat -166px -56px;
+    height: 40px;
+    width: 100%;
+    /*background: url("../img/all.png") no-repeat -166px -56px;*/
+    background: url("../img/back-black.png") no-repeat center;
+    background-size: 70%;
 }
 .video-box .top-menu{
-    background: url("../img/all.png") no-repeat -217px -56px;
+    height: 40px;
+    width: 100%;
+    /*background: url("../img/all.png") no-repeat -217px -56px;*/
+    background: url("../img/meun-black.png") no-repeat center;
+    background-size: 70%;
 }
 .video-box .font-c{
     color: #333333;

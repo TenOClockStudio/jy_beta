@@ -8,20 +8,24 @@
     float: left;
 }
 .search-wrap .icon-back{
-    width: 40px;
+    width: 12%;
     height: 40px;
-    background: url("../img/all.png") no-repeat -166px -56px;
+    /*background: url("../img/all.png") no-repeat -166px -56px;*/
+    background: url("../img/back-black.png") no-repeat center;
+    background-size: 70%;
 }
 .search-wrap .icon-menu{
     float: right;
-    width: 40px;
+    width: 12%;
     height: 40px;
     position: relative;
     font-style: normal;
-    background: url("../img/all.png") no-repeat -217px -56px;
+    /*background: url("../img/all.png") no-repeat -217px -56px;*/
+    background: url("../img/meun-black.png") no-repeat center;
+    background-size: 70%;
 }
 .search-wrap .search-box{
-    width: 70%;
+    width: 74%;
     height: 42px;
     border: 1px solid #cccccc;
     background-color: #ffffff;
@@ -37,7 +41,9 @@
     width: 40px;
     height: 40px;
     margin-left: 1rem;
-    background: url("../img/all.png") no-repeat -526px -56px;
+    /*background: url("../img/all.png") no-repeat -526px -56px;*/
+    background: url("../img/search.png") no-repeat center;
+    background-size: 70%;
 }
 .search-box .input-search{
     border: none;
@@ -139,7 +145,7 @@
 }
 .exam-wrap .exam-cards .cards-l>p{
     border-top: 2px solid #cccccc;
-    padding: 0.4rem 0.5rem;
+    padding: 0.4rem 0.6rem;
 }
 .exam-wrap .exam-cards .cards-l>p:first-child{
     border: none;
