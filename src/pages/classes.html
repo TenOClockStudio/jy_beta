@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <title>课程学习-正向红亚学习平台</title>
-        <link rel="stylesheet" href="/css/weui.min.css"/>
-		<link rel="stylesheet" href="/css/jquery-weui.css">
-		<link rel="stylesheet" href="/js/lib/mobiscroll_datetime/mobiscroll.custom-2.5.2.min.css">
-		<link rel="stylesheet" href="/css/classes.css">
+        <link rel="stylesheet" href="../css/weui.min.css"/>
+		<link rel="stylesheet" href="../css/jquery-weui.css">
+		<link rel="stylesheet" href="../js/lib/mobiscroll_datetime/mobiscroll.custom-2.5.2.min.css">
+		<link rel="stylesheet" href="../css/classes.css">
     </head>
     <body>
 		<div class="container js_container">
@@ -22,11 +22,11 @@
 					<em href="#" class="icon-menu" id="icon-menu">
 						<i class="trig hide"></i>
 						<ul class="menu-list hide">
-							<li><a href="/">主页</a></li>
-							<li><a href="/pages/classes.html">课程学习</a></li>
-							<li><a href="/pages/examination.html">在线考试</a></li>
-							<li><a href="/pages/notebook.html">Notebook</a></li>
-							<li><a href="/pages/personal_center.html">个人中心</a></li>
+							<li><a href="../index.html">主页</a></li>
+							<li><a href="./classes.html">课程学习</a></li>
+							<li><a href="./examination.html">在线考试</a></li>
+							<li><a href="./notebook.html">Notebook</a></li>
+							<li><a href="./personal_center.html">个人中心</a></li>
 						</ul>
 					</em>
 				</section>
@@ -91,9 +91,9 @@
 				</section>
 			</div>
     	</div>
-		<script src="/js/lib/require.js"></script>
+		<script src="../js/lib/require.js"></script>
 		<script>
-			requirejs(['/js/boot.js'], function (boot) {
+			requirejs(['../js/boot.js'], function (boot) {
 				require(['common/base'], function() {
 					requirejs(['js/pages/classes']);
 				});

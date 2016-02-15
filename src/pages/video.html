@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <title>视频观看-正向红亚学习平台</title>
-        <link rel="stylesheet" href="/css/weui.min.css"/>
-		<link rel="stylesheet" href="/css/jquery-weui.css">
-		<link rel="stylesheet" href="/css/video.css">
+        <link rel="stylesheet" href="../css/weui.min.css"/>
+		<link rel="stylesheet" href="../css/jquery-weui.css">
+		<link rel="stylesheet" href="../css/video.css">
     </head>
     <body>
 		<div class="container js_container">
@@ -168,9 +168,9 @@
 				</section>
 			</div>
     	</div>
-		<script src="/js/lib/require.js"></script>
+		<script src="../js/lib/require.js"></script>
 		<script>
-			requirejs(['/js/boot.js'], function (boot) {
+			requirejs(['../js/boot.js'], function (boot) {
 				require(['common/base'], function() {
 					requirejs(['js/pages/video']);
 				});

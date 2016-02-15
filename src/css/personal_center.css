@@ -9,7 +9,7 @@
 	width: 70px;
 	height: 70px;
 	border-radius: 4px;
-	background: url(/img/all.png) -903px -82px no-repeat;
+	background: url(../img/all.png) -903px -82px no-repeat;
 }
 .banner-center{
 	float: left;
@@ -62,3 +62,4 @@
 .weui_progress_inner_bar {
     height: 100%;
     background-color: #95B85E;
+}

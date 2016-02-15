@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title>考试答卷-正向红亚学习平台</title>
-    <link rel="stylesheet" href="/css/weui.min.css"/>
-    <link rel="stylesheet" href="/css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/weui.min.css"/>
+    <link rel="stylesheet" href="../css/jquery-weui.css">
     <!--<link rel="stylesheet" href="/js/lib/mobiscroll_datetime/mobiscroll.custom-2.5.2.min.css">-->
-    <link rel="stylesheet" href="/css/paper.css">
+    <link rel="stylesheet" href="../css/paper.css">
 </head>
 <body>
 <div class="container js_container">
     <div class="page">
         <div class="top-head top-head-second clearfix">
-            <a href="/index.html"class="top-fl"><img src="/img/back-white.png" class="back-white"></a>
+            <a href="../index.html"class="top-fl"><img src="../img/back-white.png" class="back-white"></a>
             <span class="font-c">2015江苏测试发</span>
-            <a class="top-fr"><img src="/img/menu-white.png" class="menu-white"></span></a>
+            <a class="top-fr"><img src="../img/menu-white.png" class="menu-white"></span></a>
         </div>
         <div class="paper-wrap">
             <section class="paper-ans">
@@ -59,9 +59,9 @@
 <footer class="ans-ft">
     <button type="button" class="weui_btn weui_btn_custom_primary" id="btn-submit">交卷</button>
 </footer>
-<script src="/js/lib/require.js"></script>
+<script src="../js/lib/require.js"></script>
 <script>
-    requirejs(['/js/boot.js'], function (boot) {
+    requirejs(['../js/boot.js'], function (boot) {
         require(['common/base'], function() {
             requirejs(['js/pages/paper']);
         });

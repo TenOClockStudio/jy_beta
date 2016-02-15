@@ -5,32 +5,32 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <title>个人中心-正向红亚学习平台</title>
-        <link rel="stylesheet" href="/css/weui.min.css"/>
-		<link rel="stylesheet" href="/css/jquery-weui.css">
-		<link rel="stylesheet" href="/css/personal_center.css">
+        <link rel="stylesheet" href="../css/weui.min.css"/>
+		<link rel="stylesheet" href="../css/jquery-weui.css">
+		<link rel="stylesheet" href="../css/personal_center.css">
     </head>
     <body>
 		<div class="container js_container">
 			<div class="page">
 				<div class="top-head clearfix">
-					<a href="/index.html"class="top-fl"><img src="/img/back-white.png" class="back-white"></a>
+					<a href="../index.html"class="top-fl"><img src="../img/back-white.png" class="back-white"></a>
 					<span class="font-c">个人中心</span>
 					<em href="#" class="top-icon-menu" id="top-icon-menu">
-						<img src="/img/menu-white.png"class="menu-white">
+						<img src="../img/menu-white.png"class="menu-white">
 						<i class="top-trig hide"></i>
 						<ul class="top-menu-list hide">
-							<li><a href="/index.html">主页</a></li>
-							<li><a href="/pages/classes.html">课程学习</a></li>
-							<li><a href="/pages/examination.html">在线考试</a></li>
-							<li><a href="/pages/notebook.html">Notebook</a></li>
-							<li><a href="/pages/personal_center.html">个人中心</a></li>
+							<li><a href="../index.html">主页</a></li>
+							<li><a href="./classes.html">课程学习</a></li>
+							<li><a href="./examination.html">在线考试</a></li>
+							<li><a href="./notebook.html">Notebook</a></li>
+							<li><a href="./personal_center.html">个人中心</a></li>
 						</ul>
 					</em>
 				</div>
 				<div class="banner clearfix">
 					<div class="banner-img"></div>
 					<div class="banner-center"><h3>王思聪</h3><p>ID:1356661234</p><p>微信:wangsicong</p></div>
-					<a href="/pages/account_bind.html"><div class="banner-fr">绑定账号</div></a>
+					<a href="./account_bind.html"><div class="banner-fr">绑定账号</div></a>
 				</div>
 				<div>
 					<div class="center banner">
@@ -51,19 +51,19 @@
 					</div>
 				</div>
 				<div class="weui_cells weui_cells_access">
-				  	<a class="weui_cell" href="/pages/personal_info.html">
+				  	<a class="weui_cell" href="./personal_info.html">
 				    	<div class="weui_cell_bd weui_cell_primary">
 				      		<p>个人信息</p>
 				    	</div>
 				    	<div class="weui_cell_ft"></div>
 				  	</a>
-				  	<a class="weui_cell" href="/pages/icon_setting.html">
+				  	<a class="weui_cell" href="./icon_setting.html">
 				    	<div class="weui_cell_bd weui_cell_primary">
 				      		<p>头像设置</p>
 				    	</div>
 				    	<div class="weui_cell_ft"></div>
 				  	</a>
-				  	<a class="weui_cell" href="/pages/psw_change.html">
+				  	<a class="weui_cell" href="./psw_change.html">
 				    	<div class="weui_cell_bd weui_cell_primary">
 				      		<p>密码修改</p>
 				    	</div>
@@ -78,9 +78,9 @@
 				</div>
 			</div>
     	</div>
-		<script src="/js/lib/require.js"></script>
+		<script src="../js/lib/require.js"></script>
 		<script>
-			requirejs(['/js/boot.js'], function (boot) {
+			requirejs(['../js/boot.js'], function (boot) {
 				require(['common/base'], function() {
 					requirejs(['js/pages/personal_center']);
 				});

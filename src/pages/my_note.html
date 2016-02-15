@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <title></title>
-        <link rel="stylesheet" href="/css/weui.min.css"/>
-		<link rel="stylesheet" href="/css/jquery-weui.css">
-		<link rel="stylesheet" href="/css/my_note.css">
+        <link rel="stylesheet" href="../css/weui.min.css"/>
+		<link rel="stylesheet" href="../css/jquery-weui.css">
+		<link rel="stylesheet" href="../css/my_note.css">
     </head>
     <body>
 		<div class="container js_container">
@@ -31,9 +31,9 @@
 				</div>
 			</div>
     	</div>
-		<script src="/js/lib/require.js"></script>
+		<script src="../js/lib/require.js"></script>
 		<script>
-			requirejs(['/js/boot.js'], function (boot) {
+			requirejs(['../js/boot.js'], function (boot) {
 				require(['common/base'], function() {
 					requirejs(['js/pages/my_note']);
 				});

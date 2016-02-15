@@ -4,30 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <title>头像设置-正向红亚学习平台</title>
-        <link rel="stylesheet" href="/css/weui.min.css"/>
-		<link rel="stylesheet" href="/css/jquery-weui.css">
-		<link rel="stylesheet" href="/css/icon_setting.css">
+        <link rel="stylesheet" href="../css/weui.min.css"/>
+		<link rel="stylesheet" href="../css/jquery-weui.css">
+		<link rel="stylesheet" href="../css/icon_setting.css">
     </head>
     <body>
 		<div class="container js_container">
 			<div class="page">
 				<div class="top-head clearfix">
-					<a href="/pages/personal_center.html"class="top-fl"><img src="/img/back-white.png" class="back-white"></a>
+					<a href="./personal_center.html"class="top-fl"><img src="../img/back-white.png" class="back-white"></a>
 					<span class="font-c">头像设置</span>
 					<em href="#" class="top-icon-menu" id="top-icon-menu">
-						<img src="/img/menu-white.png"class="menu-white">
+						<img src="../img/menu-white.png"class="menu-white">
 						<i class="top-trig hide"></i>
 						<ul class="top-menu-list hide">
-							<li><a href="/index.html">主页</a></li>
-							<li><a href="/pages/classes.html">课程学习</a></li>
-							<li><a href="/pages/examination.html">在线考试</a></li>
-							<li><a href="/pages/notebook.html">Notebook</a></li>
-							<li><a href="/pages/personal_center.html">个人中心</a></li>
+							<li><a href="../index.html">主页</a></li>
+							<li><a href="./classes.html">课程学习</a></li>
+							<li><a href="./examination.html">在线考试</a></li>
+							<li><a href="./notebook.html">Notebook</a></li>
+							<li><a href="./personal_center.html">个人中心</a></li>
 						</ul>
 					</em>
 				</div>
 				<div class="ico-cen">
-					<img class="ico-img" src="/img/ico-big.png">
+					<img class="ico-img" src="../img/ico-big.png">
 					<div class="ico-div">设置新头像</div>
 					<a href="javascript:;" class="weui_btn weui_btn_ico">拍摄新照片</a>
 					<a href="javascript:;" class="weui_btn weui_btn_ico">选择手机中的照片</a>
@@ -35,9 +35,9 @@
 
 			</div>
     	</div>
-		<script src="/js/lib/require.js"></script>
+		<script src="../js/lib/require.js"></script>
 		<script>
-			requirejs(['/js/boot.js'], function (boot) {
+			requirejs(['../js/boot.js'], function (boot) {
 				require(['common/base'], function() {
 					requirejs(['js/pages/icon_setting']);
 				});
