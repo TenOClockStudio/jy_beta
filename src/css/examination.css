@@ -141,7 +141,7 @@
 }
 .exam-wrap .exam-cards .cards-r{
     float: left;
-    padding: 2rem;
+    padding: 1.4rem 0 0 1.5rem;
 }
 .exam-wrap .exam-cards .cards-l>p{
     border-top: 2px solid #cccccc;
