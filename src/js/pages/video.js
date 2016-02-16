@@ -15,4 +15,9 @@ define(function (require) {
             }
         });
     });
+
+    $("#top-icon-menu").click(function(){
+        $('.top-trig').toggleClass("hide");
+        $('.top-menu-list').toggleClass("hide");
+    });
 });
