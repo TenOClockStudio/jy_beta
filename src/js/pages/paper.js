@@ -63,11 +63,57 @@ define(function (require) {
     //});
     $("#btn-submit").click(function(){
         $.modal({
-            title: "提示",
+            title: "<h2 class='warning-title'><i class='icon-warning'></i>提示</h2>",
             text: "确认要交卷吗？",
             buttons: [
-                { text: "否", onClick: function(){ console.log(1)} },
-                { text: "是", onClick: function(){ console.log(2)} }
+                { text: "<span class='modal-no'></span>", onClick: function(){
+                    console.log(1)
+                } },
+                { text: "<span class='modal-yes'></span>", onClick: function(){
+                    console.log(2);
+                    $.closeModal();
+                    $.modal({
+                        title: "",
+                        text: "<div><img src='../img/trust-tips.png' width='100%'  alt=''/><p>提交成功，正在计算得分，请稍后</p><p id='waiting-p'>页面将自动跳转，等待时间：5</p></div>",
+                        buttons: [
+                            { text: "<span class='modal-btn-wt' id='btn-wt'>若到时未自动跳转，请点击</span>", onClick: function(){
+                                console.log(1);
+                                $.closeModal();
+                                $.modal({
+                                    title: "<h2 class='modal-re-t'>试卷：2015江柔测试一</h2><p class='modal-re-p'>考试时间：2015-12-11 15:11:28</p>",
+                                    text: "<p class='modal-sc'>本次得分：<em>72</em>分</p><img src='../img/mdal-img.png' width='auto' height='120px' alt=''/>",
+                                    buttons: [
+                                        { text: "<span class='modal-btn-ag'>再来一次</span>", onClick: function(){
+                                            console.log(1);
+                                            $.closeModal();
+                                        } },{ text: "<span class='modal-btn-bk'>点击返回</span>", onClick: function(){
+                                            console.log(1);
+                                            $.closeModal();
+                                        } }
+                                    ]
+                                });
+                            } }
+                        ]
+                    });
+                    setTimeout(function(){
+                        if(!$("#waiting-p")){
+                            return;
+                        }
+                        var time = 5;
+                        var cycle;
+                        var texting= function(){
+                            time--;
+                            if(time<0){
+                                clearInterval(cycle);
+                                console.log("002");
+                                $("#btn-wt").trigger("click");
+                                return;
+                            }
+                                $("#waiting-p").text("页面将自动跳转，等待时间："+time);
+                        };
+                        cycle = setInterval(texting,1000);
+                    },1000);
+                }}
             ]
         });
     });

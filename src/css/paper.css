@@ -38,3 +38,84 @@
     position: relative;
     font-style: normal;
 }
+
+.warning-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.icon-warning{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/tips.png") no-repeat center;
+    background-size: 100%;
+}
+.modal-no,.modal-yes{
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+
+}
+.modal-no{
+    background: url("../img/no.png") no-repeat center;
+    background-size: 80%;
+}
+.modal-yes{
+    background: url("../img/yes.png") no-repeat center;
+    background-size: 80%;
+}
+.weui_dialog_ft:after {
+    width: 0;
+}
+.weui_dialog .weui_btn_dialog + .weui_btn_dialog:after, .weui_toast .weui_btn_dialog + .weui_btn_dialog:after {
+   width: 0;
+   height: 0;
+}
+.modal-btn-wt{
+    background-color: #20B9B0;
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 0 12px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+.modal-re-t{
+    font-size: 1.4rem;
+}
+.modal-re-p{
+    font-size: 1rem;
+}
+.modal-sc{
+    background-color: #95B85E;
+    color: #ffffff;
+    padding: 5px 0;
+    border-radius: 4px;
+}
+.modal-sc>em{
+    font-size: 1.5rem;
+    font-style: normal;
+}
+.modal-btn-ag,.modal-btn-bk{
+    color: #000000;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.modal-btn-ag:before{
+    content: " ";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/mdal-ed.png") no-repeat center;
+    background-size: 100%;
+    vertical-align: top;
+}
+.modal-btn-bk:before{
+    content: " ";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/mdal-re.png") no-repeat center;
+    background-size: 100%;
+    vertical-align: top;
+}
