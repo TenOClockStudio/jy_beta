@@ -283,6 +283,7 @@ body{
     background: #1FB5AC;
     text-align: center;
     font-size: 0.9rem;
+    z-index: 999;
 }
 .top-menu-list a{
     color: #ffffff;
@@ -303,6 +304,7 @@ body{
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: 10px solid #3EC6BD;
+    z-index: 999;
 }
 .top-icon-menu{
     float: right;
