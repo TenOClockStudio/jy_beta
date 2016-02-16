@@ -14,12 +14,12 @@ define(function (require) {
     //    opt.datetime = {preset : 'datetime'};
     //    opt.time = {preset : 'time'};
     //    opt.default = {
-    //        theme: 'android-ics light', //Æ¤·ôÑùÊ½
-    //        display: 'modal', //ÏÔÊ¾·½Ê½
-    //        mode: 'scroller', //ÈÕÆÚÑ¡ÔñÄ£Ê½
+    //        theme: 'android-ics light', //çš®è‚¤æ ·å¼
+    //        display: 'modal', //æ˜¾ç¤ºæ–¹å¼
+    //        mode: 'scroller', //æ—¥æœŸé€‰æ‹©æ¨¡å¼
     //        lang:'zh',
-    //        startYear:currYear - 10, //¿ªÊ¼Äê·İ
-    //        endYear:currYear + 10 //½áÊøÄê·İ
+    //        startYear:currYear - 10, //å¼€å§‹å¹´ä»½
+    //        endYear:currYear + 10 //ç»“æŸå¹´ä»½
     //    };
     //
     //    $("#appDate").val('').scroller('destroy').scroller($.extend(opt['date'], opt['default']));
@@ -28,29 +28,29 @@ define(function (require) {
     //    //$("#appDateTime").mobiscroll(optDateTime).datetime(optDateTime);
     //    // $("#appTime").mobiscroll(optTime).time(optTime);
     //
-    //    //ÏÂÃæ×¢ÊÍ²¿·ÖÊÇÉÏÃæµÄ²ÎÊı¿ÉÒÔÌæ»»¸Ä±äËüµÄÑùÊ½
-    //    //Ï£ÍûÒ»ÆğÑĞ¾¿²å¼şµÄÅóÓÑ¼ÓÎÒ¸öÈËQQÒ²¿ÉÒÔ£¬±¾ÈËÒ²½¨¸öÈº 291464597 »¶Ó­½øÈº½»Á÷¡£¹ş¹ş¡£Õâ¸ö²»ÄÜËã¹ã¸æ¡£
-    //    // Ö±½ÓĞ´²ÎÊı·½·¨
+    //    //ä¸‹é¢æ³¨é‡Šéƒ¨åˆ†æ˜¯ä¸Šé¢çš„å‚æ•°å¯ä»¥æ›¿æ¢æ”¹å˜å®ƒçš„æ ·å¼
+    //    //å¸Œæœ›ä¸€èµ·ç ”ç©¶æ’ä»¶çš„æœ‹å‹åŠ æˆ‘ä¸ªäººQQä¹Ÿå¯ä»¥ï¼Œæœ¬äººä¹Ÿå»ºä¸ªç¾¤ 291464597 æ¬¢è¿è¿›ç¾¤äº¤æµã€‚å“ˆå“ˆã€‚è¿™ä¸ªä¸èƒ½ç®—å¹¿å‘Šã€‚
+    //    // ç›´æ¥å†™å‚æ•°æ–¹æ³•
     //    //$("#scroller").mobiscroll(opt).date();
     //    // Shorthand for: $("#scroller").mobiscroll({ preset: 'date' });
-    //    //¾ßÌå²ÎÊı¶¨ÒåÈçÏÂ
+    //    //å…·ä½“å‚æ•°å®šä¹‰å¦‚ä¸‹
     //    //{
-    //    //preset: 'date', //ÈÕÆÚÀàĞÍ--datatime --time,
-    //    //theme: 'ios', //Æ¤·ôÆäËû²ÎÊı¡¾android-ics light¡¿¡¾android-ics¡¿¡¾ios¡¿¡¾jqm¡¿¡¾sense-ui¡¿¡¾sense-ui¡¿¡¾sense-ui¡¿
-    //    //¡¾wp light¡¿¡¾wp¡¿
-    //    //mode: "scroller",//²Ù×÷·½Ê½¡¾scroller¡¿¡¾clickpick¡¿¡¾mixed¡¿
-    //    //display: 'bubble', //ÏÔÊ¾·½¡¾modal¡¿¡¾inline¡¿¡¾bubble¡¿¡¾top¡¿¡¾bottom¡¿
-    //    //dateFormat: 'yyyy-mm-dd', // ÈÕÆÚ¸ñÊ½
-    //    //setText: 'È·¶¨', //È·ÈÏ°´Å¥Ãû³Æ
-    //    //cancelText: 'Çå¿Õ',//È¡Ïû°´Å¥Ãû¼®ÎÒ
-    //    //dateOrder: 'yymmdd', //Ãæ°åÖĞÈÕÆÚÅÅÁĞ¸ñ
-    //    //dayText: 'ÈÕ',
-    //    //monthText: 'ÔÂ',
-    //    //yearText: 'Äê', //Ãæ°åÖĞÄêÔÂÈÕÎÄ×Ö
-    //    //startYear: (new Date()).getFullYear(), //¿ªÊ¼Äê·İ
-    //    //endYear: (new Date()).getFullYear() + 9, //½áÊøÄê·İ
+    //    //preset: 'date', //æ—¥æœŸç±»å‹--datatime --time,
+    //    //theme: 'ios', //çš®è‚¤å…¶ä»–å‚æ•°ã€android-ics lightã€‘ã€android-icsã€‘ã€iosã€‘ã€jqmã€‘ã€sense-uiã€‘ã€sense-uiã€‘ã€sense-uiã€‘
+    //    //ã€wp lightã€‘ã€wpã€‘
+    //    //mode: "scroller",//æ“ä½œæ–¹å¼ã€scrollerã€‘ã€clickpickã€‘ã€mixedã€‘
+    //    //display: 'bubble', //æ˜¾ç¤ºæ–¹ã€modalã€‘ã€inlineã€‘ã€bubbleã€‘ã€topã€‘ã€bottomã€‘
+    //    //dateFormat: 'yyyy-mm-dd', // æ—¥æœŸæ ¼å¼
+    //    //setText: 'ç¡®å®š', //ç¡®è®¤æŒ‰é’®åç§°
+    //    //cancelText: 'æ¸…ç©º',//å–æ¶ˆæŒ‰é’®åç±æˆ‘
+    //    //dateOrder: 'yymmdd', //é¢æ¿ä¸­æ—¥æœŸæ’åˆ—æ ¼
+    //    //dayText: 'æ—¥',
+    //    //monthText: 'æœˆ',
+    //    //yearText: 'å¹´', //é¢æ¿ä¸­å¹´æœˆæ—¥æ–‡å­—
+    //    //startYear: (new Date()).getFullYear(), //å¼€å§‹å¹´ä»½
+    //    //endYear: (new Date()).getFullYear() + 9, //ç»“æŸå¹´ä»½
     //    //showNow: true,
-    //    //nowText: "Ã÷Ìì",  //
+    //    //nowText: "æ˜å¤©",  //
     //    //showOnFocus: false,
     //    //height: 45,
     //    //width: 90,
