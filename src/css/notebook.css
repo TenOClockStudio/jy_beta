@@ -32,3 +32,6 @@
 	text-align: right;
 	color: #1FB5AC;
 }
+.note-details{
+	display: none;
+}

@@ -15,4 +15,19 @@ define(function (require) {
         $('.top-trig').toggleClass("hide");
         $('.top-menu-list').toggleClass("hide");
     });
+    //查看详情特效
+    $('.bac').find('.alg-r').click(function(){
+        var $t = $(this);
+        var $tp = $(this).prev();
+
+        if ($tp.hasClass('note-details')) {
+            $tp.slideDown("slow");
+            $t.text('收起详情');
+            $tp.removeClass('note-details');
+        }else{
+            $tp.slideUp("slow");
+            $t.text('展开查看');
+            $tp.addClass('note-details');
+        }
+    });
 });
