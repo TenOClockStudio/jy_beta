@@ -18,16 +18,16 @@ define(function (require) {
     //查看详情特效
     $('.bac').find('.alg-r').click(function(){
         var $t = $(this);
-        var $tp = $(this).prev();
+        var $tp = $(this).parent().next();
 
-        if ($tp.hasClass('note-details')) {
+        if ($tp.hasClass('note-sty')) {
             $tp.slideDown("slow");
-            $t.text('收起详情');
-            $tp.removeClass('note-details');
+            $t.text('收起回复');
+            $tp.removeClass('note-sty');
         }else{
             $tp.slideUp("slow");
-            $t.text('展开查看');
-            $tp.addClass('note-details');
+            $t.text('查看回复');
+            $tp.addClass('note-sty');
         }
     });
 });

@@ -33,5 +33,15 @@
 	color: #1FB5AC;
 }
 .note-details{
+	text-indent:2em;
+	border: 1px solid #ccc;
+}
+.note-sty{
 	display: none;
+}
+.note-pa{
+	padding: 0 5px 5px 5px;
+}
+.note-mar{
+	margin: 5px;
 }
