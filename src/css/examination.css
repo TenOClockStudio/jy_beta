@@ -62,15 +62,36 @@
 }
 .filter-box{
     background-color: #ffffff;
-    padding: 0.5rem;
+    /*padding: 0.5rem;*/
     margin-bottom: 15px;
 }
-.filter-box .filter-box-date,
-.filter-box .filter-box-pro,
-.filter-box .filter-box-sts{
+.filter-box .filter-box-l,
+.filter-box .filter-box-r{
     display: block;
     float: left;
-    width: 50%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    position: relative;
+    /*width: 50%;*/
+}
+.filter-box .filter-box-l:after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #ccc;
+}
+.filter-box .filter-box-l{
+    width: 70%;
+}
+.filter-box .filter-box-r{
+    width: 30%;
+}
+.filter-box .filter-box-date{
+    margin-bottom: 1rem;
 }
 .select-style,.date-style{
     background-color: #ffffff;
@@ -79,10 +100,11 @@
     border: 1px solid #ccc;
 }
 .date-style{
-    width: 6rem;
+    width: 4.9rem;
 }
 .select-style{
     height: 2rem;
+    width: 12.5rem;
 }
 .menu-list{
     position: absolute;
@@ -154,4 +176,9 @@
 .weui_btn_custom_primary{
     font-size: 1rem;
     background-color: #3EC6BD;
+}
+.weui_btn_custom_primary1{
+    font-size: 1rem;
+    background-color: #3EC6BD;
+    margin-top: 1rem;
 }
