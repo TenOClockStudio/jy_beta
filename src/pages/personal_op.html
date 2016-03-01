@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>个人信息-正向红亚学习平台</title>
+        <link rel="stylesheet" href="../css/weui.min.css"/>
+		<link rel="stylesheet" href="../css/jquery-weui.css">
+		<link rel="stylesheet" href="../js/lib/mobiscroll_datetime/mobiscroll.custom-2.5.2.min.css">
+		<link rel="stylesheet" href="../css/personal_op.css">
+    </head>
+    <body>
+		<div class="container js_container">
+			<div class="page">
+				<div class="top-head clearfix">
+					<a href="./personal_center.html" class="top-fl"><img src="../img/back-white.png" class="back-white"></span></a>
+					<span class="font-c">意见提交</span>
+					<em href="#" class="top-icon-menu" id="top-icon-menu">
+            <img src="../img/menu-white.png" class="menu-white">
+            <i class="top-trig hide"></i>
+            <ul class="top-menu-list hide">
+              <li><a href="../index.html">主页</a></li>
+              <li><a href="./classes.html">课程学习</a></li>
+              <li><a href="./examination.html">在线考试</a></li>
+              <li><a href="./notebook.html">Notebook</a></li>
+              <li><a href="./personal_center.html">个人中心</a></li>
+            </ul>
+          </em>
+				</div>
+				<section class="per-op">
+                    <textarea name="" id="" placeholder="请输入意见"></textarea>
+                    <p class="hot-line">24小时服务热线：1111111111</p>
+                    <button type="button" class="weui_btn weui_btn_custom_primary">提交</button>
+                </section>
+			</div>
+			</div>
+    	</div>
+		<script src="../js/lib/require.js"></script>
+		<script>
+			requirejs(['../js/boot.js'], function (boot) {
+				require(['common/base'], function() {
+					requirejs(['js/pages/personal_op']);
+				});
+			});
+		</script>
+    </body>
+</html>
